@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:make_music_app/widget/column_music_list.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -6,6 +7,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
@@ -24,7 +26,7 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: Container(),
+      body: const ColumnMusicList(),
     );
   }
 }
