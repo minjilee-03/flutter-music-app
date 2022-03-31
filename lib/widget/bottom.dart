@@ -5,47 +5,29 @@ class BottomNavigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.black,
-      child: const SizedBox(
-        height: 50,
-        child: TabBar(
-          labelColor: Colors.white,
-          unselectedLabelColor: Colors.white60,
-          indicatorColor: Colors.transparent,
-          tabs: <Widget>[
-            Tab(
-              icon: Icon(
-                Icons.home,
-                size: 18,
-              ),
-              child: Text(
-                '홈',
-                style: TextStyle(fontSize: 9),
-              ),
+    return const SizedBox(
+      height: 50,
+      child: TabBar(
+        labelColor: Color.fromARGB(255, 59, 50, 50),
+        unselectedLabelColor: Color.fromARGB(200, 59, 50, 50),
+        indicatorColor: Colors.green,
+        tabs: <Widget>[
+          Tab(
+            icon: Icon(
+              Icons.home,
             ),
-            Tab(
-              icon: Icon(
-                Icons.search,
-                size: 18,
-              ),
-              child: Text(
-                '검색',
-                style: TextStyle(fontSize: 9),
-              ),
+          ),
+          Tab(
+            icon: Icon(
+              Icons.explore_outlined,
             ),
-            Tab(
-              icon: Icon(
-                Icons.save_alt,
-                size: 18,
-              ),
-              child: Text(
-                '저장한 콘텐츠 목록',
-                style: TextStyle(fontSize: 9),
-              ),
+          ),
+          Tab(
+            icon: Icon(
+              Icons.library_music_outlined,
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
