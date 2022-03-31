@@ -5,9 +5,10 @@ class BottomNavigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SizedBox(
+    return Container(
+      color: Colors.white,
       height: 50,
-      child: TabBar(
+      child: const TabBar(
         labelColor: Color.fromARGB(255, 59, 50, 50),
         unselectedLabelColor: Color.fromARGB(200, 59, 50, 50),
         indicatorColor: Colors.green,
