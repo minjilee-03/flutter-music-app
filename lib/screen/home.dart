@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:make_music_app/widget/column_music_list.dart';
+import 'package:make_music_app/widget/fast_choice.dart';
+import 'package:card_swiper/card_swiper.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -26,7 +27,7 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: const ColumnMusicList(),
+      body: const FastChoice(),
     );
   }
 }
